@@ -1,0 +1,12 @@
+.next
+node_modules
+coverage
+playwright-report
+test-results
+reference
+package-lock.json
+CHANGELOG.md
+CLAUDE.md
+docs/superpowers/
+tests/fixtures
+.superpowers
