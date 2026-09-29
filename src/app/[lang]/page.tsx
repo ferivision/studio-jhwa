@@ -1,3 +1,6 @@
+import { getProjects } from "@/lib/content";
+
 export default function HomePage() {
-  return <main>studioJHWA</main>;
+  const projectCount = getProjects().length;
+  return <main data-project-count={projectCount}>studioJHWA</main>;
 }

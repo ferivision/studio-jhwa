@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "home": {
+      "title": "studioJHWA | Interior Design & Build in Surabaya and Malang",
+      "description": "Interior design and build studio in Surabaya and Malang. We design, produce custom furniture, and install, so your space is ready to live in."
+    },
+    "projects": {
+      "title": "Projects | studioJHWA Interior Design Surabaya & Malang",
+      "description": "Selected homes and rooms designed and built by studioJHWA across Surabaya and Malang."
+    },
+    "project": {
+      "title": "{name} | Interior Design Project by studioJHWA",
+      "description": "{name}: {type} in {city}, designed and built by studioJHWA."
+    },
+    "ogAlt": "studioJHWA, interior design and build studio in Surabaya and Malang"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu"
+  },
+  "nav": {
+    "projects": "Projects",
+    "services": "Services",
+    "rooms": "Rooms",
+    "faq": "FAQ",
+    "cta": "Start a project"
+  },
+  "lang": { "en": "English", "id": "Bahasa Indonesia" },
+  "hero": {
+    "eyebrow": "Interior design & build studio, Surabaya & Malang",
+    "line1": "Formed by flow,",
+    "line2": "built on principles.",
+    "primary": "See our projects",
+    "secondary": "Start a project"
+  },
+  "intro": {
+    "lead": "We design your space, build it, and hand it back",
+    "leadEm": "ready to live in.",
+    "body": "studioJHWA is an interior studio working across Surabaya and Malang. One team takes every project from the first sketch to custom production and on-site installation, so what you approve is what you get.",
+    "tag": "Design, production, installation. One team."
+  },
+  "selected": { "title": "Selected projects", "viewAll": "View all projects" },
+  "strip": {
+    "label": "Studio work",
+    "title": "Rooms we've shaped.",
+    "viewAll": "View all projects"
+  },
+  "lineToLight": {
+    "title": "From line to light.",
+    "body": "Every room starts as a precise drawing. Drag the slider to see the same kitchen as an isometric drawing and as the finished space.",
+    "label": "Drag to compare",
+    "render": "Render",
+    "drawing": "Drawing"
+  },
+  "rooms": {
+    "label": "Explore by room",
+    "living": "Living",
+    "kitchen": "Kitchen",
+    "workspace": "Workspace",
+    "kids": "Kids room"
+  },
+  "services": {
+    "title": "What we do",
+    "lead": "One studio for the whole job, from the first conversation to the last screw.",
+    "design": {
+      "title": "Design.",
+      "body": "Consultation, concept, and space planning shaped around how you live and what you want to spend."
+    },
+    "visualize": {
+      "title": "Visualize.",
+      "body": "Realistic 3D renders and detailed technical drawings, so you see the result before anything is built."
+    },
+    "build": {
+      "title": "Build.",
+      "body": "Custom furniture production, fit-out, and on-site installation until the space is ready to use."
+    }
+  },
+  "built": {
+    "title": "Built, not just rendered.",
+    "lead": "Real photos from site. The same room before we started and after handover.",
+    "before": "Before",
+    "after": "After",
+    "beforePlaceholder": "[Photo placeholder: before, site condition]",
+    "afterPlaceholder": "[Photo placeholder: after handover, same angle]",
+    "quote": "[Client testimonial, one or two sentences about working with the studio.]",
+    "cite": "[Client name], [Project name]"
+  },
+  "faq": {
+    "title": "Good to know",
+    "items": [
+      {
+        "q": "Where do you work?",
+        "a": "We're based in Surabaya and Malang and take projects around both cities."
+      },
+      {
+        "q": "Do you only design, or build too?",
+        "a": "Both. We handle design, custom production, and installation, or design only if you already have a contractor."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Send us a message on WhatsApp with your room, rough size, and photos. We'll set up a first consultation."
+      },
+      {
+        "q": "How long does a project take?",
+        "a": "It depends on scope. A single room usually takes [X] weeks from approved design to handover."
+      }
+    ]
+  },
+  "contact": {
+    "line1": "Have a space in mind?",
+    "line2": "Let's shape it together.",
+    "cta": "Chat on WhatsApp",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "instagram": "Instagram",
+    "studio": "Studio",
+    "studioValue": "Surabaya & Malang"
+  },
+  "footer": { "tagline": "Formed by flow, built on principles." },
+  "projectsPage": {
+    "title1": "Our",
+    "title2": "projects.",
+    "lead": "Homes and rooms we've designed and built across Surabaya and Malang.",
+    "filterLabel": "Filter projects",
+    "filters": { "all": "All", "house": "House", "bedroom": "Bedroom", "kids": "Kids room" },
+    "resultCount": "{count} projects shown",
+    "empty": "No projects in this category yet."
+  },
+  "project": {
+    "back": "All projects",
+    "location": "Location",
+    "type": "Type",
+    "area": "Area",
+    "scope": "Scope",
+    "duration": "Duration",
+    "year": "Year",
+    "brief": "The brief",
+    "approach": "Our approach",
+    "drawing": "Isometric drawing",
+    "finished": "Finished space",
+    "next": "Next project",
+    "detail": "Detail"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "home": "Back to home"
+  },
+  "breadcrumb": { "home": "Home", "projects": "Projects" }
+}
