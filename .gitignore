@@ -1,0 +1,42 @@
+# dependencies & builds
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# env & secrets
+.env
+.env.*
+.env*.local
+!.env.example
+*.pem
+*.key
+
+# testing & tooling output
+coverage/
+playwright-report/
+test-results/
+blob-report/
+.lighthouseci/
+.eslintcache
+
+# deployment
+.vercel/
+caddy_data/
+caddy_config/
+
+# logs & OS/editor
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# local design reference (never committed)
+reference/
