@@ -1,0 +1,17 @@
+name: Feature
+description: A new page, section, or capability
+title: "feat: "
+labels: [feat]
+body:
+  - type: textarea
+    id: goal
+    attributes: { label: Goal, description: What outcome does this deliver and for whom? }
+    validations: { required: true }
+  - type: textarea
+    id: scope
+    attributes: { label: Scope, description: What is in and explicitly out of scope? }
+    validations: { required: true }
+  - type: textarea
+    id: acceptance
+    attributes: { label: Acceptance criteria, description: Checklist of verifiable outcomes., value: "- [ ] " }
+    validations: { required: true }
