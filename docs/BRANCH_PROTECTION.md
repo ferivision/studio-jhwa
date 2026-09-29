@@ -8,14 +8,14 @@ repo is public or the org is on GitHub Team.
 
 ## Settings for `main` and `develop`
 
-| Setting | Value |
-| --- | --- |
-| Require a pull request before merging | on (0 required approvals; 1 when a second maintainer joins) |
-| Require status checks to pass | on, "require branches to be up to date" on |
-| Required checks | `validate`, `e2e`, `audit`, `gitleaks`, `pr-title` (`codeql` once code scanning is available) |
-| Allow force pushes | off |
-| Allow deletions | off |
-| Bypass list | the account that owns `RELEASE_TOKEN` (release bot), see docs/DEPLOYMENT.md#release |
+| Setting                               | Value                                                                                         |
+| ------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Require a pull request before merging | on (0 required approvals; 1 when a second maintainer joins)                                   |
+| Require status checks to pass         | on, "require branches to be up to date" on                                                    |
+| Required checks                       | `validate`, `e2e`, `audit`, `gitleaks`, `pr-title` (`codeql` once code scanning is available) |
+| Allow force pushes                    | off                                                                                           |
+| Allow deletions                       | off                                                                                           |
+| Bypass list                           | the account that owns `RELEASE_TOKEN` (release bot), see docs/DEPLOYMENT.md#release           |
 
 ## Apply with gh (run for both branches)
 
