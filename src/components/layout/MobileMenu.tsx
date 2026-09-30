@@ -48,9 +48,19 @@ export function MobileMenu({ links, cta, labels, children }: MobileMenuProps) {
       }
     }
 
+    // The toggle is hidden from lg up (64rem): close without pulling focus to it.
+    const desktop = window.matchMedia("(min-width: 64rem)");
+    function onViewportChange(event: MediaQueryListEvent) {
+      if (!event.matches) return;
+      restoreFocus.current = false;
+      setOpen(false);
+    }
+
     document.addEventListener("keydown", onKeyDown);
+    desktop.addEventListener("change", onViewportChange);
     return () => {
       document.removeEventListener("keydown", onKeyDown);
+      desktop.removeEventListener("change", onViewportChange);
       document.body.style.overflow = "";
       if (restoreFocus.current) toggle?.focus();
     };
