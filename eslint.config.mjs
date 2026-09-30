@@ -17,6 +17,19 @@ export default defineConfig([
     },
   },
   { files: ["src/lib/seo/JsonLd.tsx"], rules: { "react/no-danger": "off" } },
+  {
+    files: ["src/**/*.{ts,tsx}"],
+    ignores: ["src/config/env.ts"],
+    rules: {
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "MemberExpression[object.name='process'][property.name='env']",
+          message: "Read env via src/config/env.ts",
+        },
+      ],
+    },
+  },
   globalIgnores([
     ".next/**",
     "out/**",
