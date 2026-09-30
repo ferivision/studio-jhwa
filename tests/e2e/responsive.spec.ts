@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const routes = ["/en", "/id"];
+const routes = ["/en", "/id", "/en/projects", "/id/projects"];
 
 for (const route of routes) {
   for (const width of [360, 768, 1440]) {
