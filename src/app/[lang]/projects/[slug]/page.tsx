@@ -14,6 +14,7 @@ import { ProjectStory } from "@/components/sections/project/ProjectStory";
 import { env } from "@/config/env";
 import { getDictionary, getNextProject, getProject, getProjects } from "@/lib/content";
 import { format } from "@/lib/i18n/format";
+import { isPlaceholder } from "@/lib/schemas/common";
 import { isLocale, pick } from "@/lib/i18n/locales";
 import { JsonLd } from "@/lib/seo/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/seo/structured-data";
@@ -36,11 +37,16 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     lang,
     path: `/projects/${slug}`,
     title: format(meta.project.title, { name: project.name }),
-    description: format(meta.project.description, {
-      name: project.name,
-      type: pick(project.type, lang),
-      city: project.city,
-    }),
+    description: isPlaceholder(project.city)
+      ? format(meta.project.descriptionNoCity, {
+          name: project.name,
+          type: pick(project.type, lang),
+        })
+      : format(meta.project.description, {
+          name: project.name,
+          type: pick(project.type, lang),
+          city: project.city,
+        }),
   });
 }
 

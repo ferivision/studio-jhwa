@@ -26,6 +26,15 @@ for (const route of routes) {
         `${BASE}${href}`,
       );
     }
+    for (const sel of [
+      'meta[name="description"]',
+      'meta[property="og:description"]',
+      'meta[name="twitter:description"]',
+    ]) {
+      const content = (await page.locator(sel).getAttribute("content")) ?? "";
+      expect(content.length, sel).toBeGreaterThan(10);
+      expect(content, sel).not.toMatch(/\[[^\]]+\]/);
+    }
     const blocks = await page.locator('script[type="application/ld+json"]').allTextContents();
     const types = blocks.map((b) => (JSON.parse(b) as { "@type": string })["@type"]);
     expect(types).toContain("HomeAndConstructionBusiness");

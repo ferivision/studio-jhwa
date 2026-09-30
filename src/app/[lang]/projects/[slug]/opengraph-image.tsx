@@ -1,10 +1,15 @@
-import { getDictionary, getProject } from "@/lib/content";
-import { isLocale, pick } from "@/lib/i18n/locales";
+import { getDictionary, getProject, getProjects } from "@/lib/content";
+import { isLocale, locales, pick } from "@/lib/i18n/locales";
 import { renderOgImage } from "@/lib/seo/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt = "studioJHWA project";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return locales.flatMap((lang) => getProjects().map((project) => ({ lang, slug: project.slug })));
+}
 
 export default async function Image({
   params,

@@ -20,4 +20,14 @@ describe("env", () => {
     );
     expect(() => parseEnv({ SITE_ENV: "prod" })).toThrowError(/SITE_ENV/);
   });
+  it("requires an explicit site URL in production", () => {
+    expect(() => parseEnv({ SITE_ENV: "production" })).toThrowError(/NEXT_PUBLIC_SITE_URL/);
+    expect(
+      parseEnv({ SITE_ENV: "production", NEXT_PUBLIC_SITE_URL: "https://studiojhwa.example" }),
+    ).toEqual({
+      NEXT_PUBLIC_SITE_URL: "https://studiojhwa.example",
+      SITE_ENV: "production",
+    });
+    expect(parseEnv({ SITE_ENV: "preview" }).NEXT_PUBLIC_SITE_URL).toBe("http://localhost:3000");
+  });
 });

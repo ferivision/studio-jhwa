@@ -9,7 +9,7 @@ export const dictionarySchema = z.strictObject({
     home: meta,
     projects: meta,
     /** Templates: {name}, {type}, {city}. */
-    project: meta,
+    project: meta.extend({ descriptionNoCity: s }),
     ogAlt: s,
   }),
   a11y: z.strictObject({ skipToContent: s, mainNav: s, openMenu: s, closeMenu: s, menu: s }),
