@@ -13,6 +13,8 @@ updates:
       # Pinned majors, see plan Global Constraints; revisit when peers allow.
       - { dependency-name: typescript, update-types: ["version-update:semver-major"] }
       - { dependency-name: eslint, update-types: ["version-update:semver-major"] }
+      # Types must match the Node 24 runtime (engines.node >=24); do not jump ahead of it.
+      - { dependency-name: "@types/node", update-types: ["version-update:semver-major"] }
   - package-ecosystem: github-actions
     directory: /
     target-branch: develop
