@@ -16,7 +16,6 @@ test("unknown locale returns 404", async ({ request }) => {
   expect((await request.get("/fr")).status()).toBe(404);
 });
 
-// Enabled in Task 9, when the project detail route exists.
-test.fixme("unknown project slug returns 404", async ({ request }) => {
+test("unknown project slug returns 404", async ({ request }) => {
   expect((await request.get("/en/projects/does-not-exist")).status()).toBe(404);
 });

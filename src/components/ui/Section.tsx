@@ -12,6 +12,7 @@ type SectionProps = {
   tone?: keyof typeof tones;
   id?: string;
   "aria-label"?: string;
+  "data-gallery"?: boolean;
   bleed?: boolean;
   className?: string;
   children: ReactNode;
@@ -29,6 +30,7 @@ export function Section({
     <section
       id={id}
       aria-label={aria["aria-label"]}
+      data-gallery={aria["data-gallery"] ? "" : undefined}
       className={cn("relative", tones[tone], !bleed && "py-section", className)}
     >
       {children}

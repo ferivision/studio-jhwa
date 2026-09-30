@@ -10,15 +10,14 @@ test("skip link moves focus to main content", async ({ page }) => {
   await expect(page.locator("main#main")).toBeFocused();
 });
 
-// Task 9 moves this to /en/projects/rh-house and /id/projects/rh-house.
 test("language switch keeps the current path", async ({ page, isMobile }) => {
-  await page.goto("/en/projects");
+  await page.goto("/en/projects/rh-house");
   if (isMobile) await page.getByRole("button", { name: "Open menu" }).click();
   await page
     .getByRole("link", { name: /Bahasa Indonesia/ })
     .first()
     .click();
-  await expect(page).toHaveURL(/\/id\/projects$/);
+  await expect(page).toHaveURL(/\/id\/projects\/rh-house$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "id");
 });
 
