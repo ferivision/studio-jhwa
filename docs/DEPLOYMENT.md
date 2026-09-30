@@ -4,7 +4,7 @@
 
 ## Release
 
-1. Open a PR `develop → main` titled `release: vX.Y.Z` (the version semantic-release will compute; the title is informational).
+1. Open a PR `develop → main` titled `chore(release): vX.Y.Z` (the version semantic-release will compute; the title is informational).
 2. CI must be green. Merge with **"Create a merge commit"** (not squash) so every Conventional Commit reaches `main`.
 3. `release.yml` runs on the push to `main`: validates, runs semantic-release (bumps `package.json`, updates `CHANGELOG.md`, commits `chore(release): X.Y.Z [skip ci]`, tags `vX.Y.Z`, publishes a GitHub Release), then fast-forwards `develop` to `main` (or opens a sync PR if `develop` moved on).
 
