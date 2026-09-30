@@ -10,7 +10,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ lang:
   return (
     <>
       <Header lang={lang} dict={dict} variant="solid" />
-      <main id="main" />
+      <main id="main" tabIndex={-1} />
     </>
   );
 }

@@ -7,6 +7,7 @@ test("skip link moves focus to main content", async ({ page }) => {
   await expect(skip).toBeFocused();
   await skip.press("Enter");
   await expect(page).toHaveURL(/#main$/);
+  await expect(page.locator("main#main")).toBeFocused();
 });
 
 // Task 9 moves this to /en/projects/rh-house and /id/projects/rh-house.
