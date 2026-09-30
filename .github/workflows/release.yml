@@ -1,0 +1,42 @@
+name: Release
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+concurrency:
+  group: release
+  cancel-in-progress: false
+jobs:
+  release:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_TOKEN }}
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm ci
+      - run: npm run validate
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          HUSKY: "0"
+        run: npx semantic-release
+      - name: Sync main back into develop
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        run: |
+          git fetch origin main develop
+          if git merge-base --is-ancestor origin/develop origin/main; then
+            git push origin origin/main:refs/heads/develop
+          else
+            gh pr create --base develop --head main \
+              --title "chore: sync main into develop" \
+              --body "Automated back-merge after release. Merge with a merge commit (not squash)." \
+              || echo "Sync PR already open"
+          fi
