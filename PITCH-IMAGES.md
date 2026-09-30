@@ -1,6 +1,8 @@
-# Pitch-only stock images (#37)
+# Placeholder stock images and mock contacts (#37)
 
-**Do not merge this branch.** These photos are stock placeholders for a client pitch. They are not studioJHWA's work and must not appear on the production site. Replace them with the studio's high-res originals (≥ 2400px long edge) before launch.
+**Placeholders, replace before public launch.** These photos are stock images used for the client pitch. They are not studioJHWA's work. Replace them with the studio's high-res originals (≥ 2400px long edge), and replace the mock WhatsApp (`6280000000000`) and email (`hello@example.com`) in `content/site.json` with the real contacts. Keep `SITE_ENV` non-production (noindex) until then.
+
+When swapping images, use new filenames (or clear `.next/**/cache/images`): the image optimizer keeps serving cached versions of overwritten files.
 
 All photos are from Unsplash under the [Unsplash License](https://unsplash.com/license) (free for commercial use, no attribution required). Each was cropped to the original file's aspect ratio and resized to a 2400px long edge.
 
