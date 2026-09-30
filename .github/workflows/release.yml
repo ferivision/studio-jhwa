@@ -3,9 +3,7 @@ on:
   push:
     branches: [main]
 permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+  contents: read
 concurrency:
   group: release
   cancel-in-progress: false
@@ -31,12 +29,17 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         run: |
+          set -euo pipefail
           git fetch origin main develop
           if git merge-base --is-ancestor origin/develop origin/main; then
             git push origin origin/main:refs/heads/develop
           else
+            open=$(gh pr list --base develop --head main --state open --json number --jq length)
+            if [ "$open" -gt 0 ]; then
+              echo "Sync PR already open"
+              exit 0
+            fi
             gh pr create --base develop --head main \
               --title "chore: sync main into develop" \
-              --body "Automated back-merge after release. Merge with a merge commit (not squash)." \
-              || echo "Sync PR already open"
+              --body "Automated back-merge after release. Merge with a merge commit (not squash)."
           fi

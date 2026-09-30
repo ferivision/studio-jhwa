@@ -19,6 +19,8 @@ Fine-grained personal access token owned by a repo admin, stored as an Actions s
 | Permissions       | Contents: read & write; Issues: read & write; Pull requests: read & write; Metadata: read |
 | Expiry            | ≤ 1 year; calendar a rotation reminder                                                    |
 
+The workflow's own `GITHUB_TOKEN` permissions are `contents: read` only; every write (release commit, tag, GitHub Release, `develop` push, sync PR) uses the PAT.
+
 Why not `GITHUB_TOKEN`: pushes made with it do not trigger other workflows and cannot bypass branch protection.
 
 ### Branch protection and the release bot
@@ -27,4 +29,4 @@ When protection is applied (docs/BRANCH_PROTECTION.md), keep `enforce_admins: fa
 
 ### Release tooling is not a project dependency
 
-`release.yml` fetches `semantic-release`, `@semantic-release/changelog` and `@semantic-release/git` at release time with `npx --yes -p <pkg>@<exact version>`. They are not in `package.json`, so their bundled `npm` never enters the project's dependency tree or `npm audit --audit-level=high`. Bump the pinned versions in `release.yml` deliberately (verify with `npm view`).
+`release.yml` fetches `semantic-release`, `@semantic-release/changelog` and `@semantic-release/git` at release time with `npx --yes -p <pkg>@<exact version>`. They are not in `package.json`, so their bundled `npm` never enters the project's dependency tree or `npm audit --audit-level=high`. Bump the pinned versions in `release.yml` deliberately (verify with `npm view`). The tooling resolves its transitive dependencies fresh at release time, and Dependabot cannot see the pins in `release.yml`, so bump them by hand.
