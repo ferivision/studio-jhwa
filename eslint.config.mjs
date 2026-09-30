@@ -13,8 +13,10 @@ export default defineConfig([
       "no-console": "error",
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/consistent-type-imports": "error",
+      "react/no-danger": "error",
     },
   },
+  { files: ["src/lib/seo/JsonLd.tsx"], rules: { "react/no-danger": "off" } },
   globalIgnores([
     ".next/**",
     "out/**",
