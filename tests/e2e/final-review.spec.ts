@@ -2,11 +2,14 @@ import { expect, test } from "@playwright/test";
 
 test("contact CTA does not link to its own section", async ({ page }) => {
   await page.goto("/en");
-  const cta = page.locator("#contact").getByRole("link", { name: /Message us on Instagram/ });
+  // WhatsApp when a real number is set, Instagram while it is a placeholder.
+  const cta = page
+    .locator("#contact")
+    .getByRole("link", { name: /Chat on WhatsApp|Message us on Instagram/ });
   await expect(cta).toBeVisible();
   const href = await cta.getAttribute("href");
   expect(href).not.toBe("#contact");
-  expect(href).toMatch(/^https:\/\/(www\.)?instagram\.com\//);
+  expect(href).toMatch(/^https:\/\/(wa\.me\/\d+|(www\.)?instagram\.com\/)/);
   await expect(cta).toHaveAttribute("rel", "noopener noreferrer");
 });
 
