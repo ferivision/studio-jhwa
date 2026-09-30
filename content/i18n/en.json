@@ -10,7 +10,8 @@
     },
     "project": {
       "title": "{name} | Interior Design Project by studioJHWA",
-      "description": "{name}: {type} in {city}, designed and built by studioJHWA."
+      "description": "{name}: {type} in {city}, designed and built by studioJHWA.",
+      "descriptionNoCity": "{name}: {type}, designed and built by studioJHWA."
     },
     "ogAlt": "studioJHWA, interior design and build studio in Surabaya and Malang"
   },

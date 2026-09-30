@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { ProjectFilter } from "@/components/sections/ProjectFilter";
@@ -6,7 +7,24 @@ import { Container } from "@/components/ui/Container";
 import { Heading, HeadingEm, HeadingThin } from "@/components/ui/Heading";
 import { getDictionary, getProjects } from "@/lib/content";
 import { isLocale } from "@/lib/i18n/locales";
+import { buildMetadata } from "@/lib/seo/metadata";
 import { categories } from "@/lib/schemas/project";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  if (!isLocale(lang)) notFound();
+  const { meta } = getDictionary(lang);
+  return buildMetadata({
+    lang,
+    path: "/projects",
+    title: meta.projects.title,
+    description: meta.projects.description,
+  });
+}
 
 export default async function ProjectsPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
