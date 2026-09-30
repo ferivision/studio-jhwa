@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { isLocale, locales } from "@/lib/i18n/locales";
+import { jost } from "@/lib/fonts";
 import "../globals.css";
 
 export const dynamicParams = false;
@@ -19,7 +20,7 @@ export default async function LocaleLayout({
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   return (
-    <html lang={lang}>
+    <html lang={lang} className={jost.variable}>
       <body>{children}</body>
     </html>
   );
