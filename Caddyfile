@@ -1,0 +1,15 @@
+{$SITE_DOMAIN} {
+	encode zstd gzip
+
+	# The app already sets security headers (src/config/security-headers.ts).
+	# "?" sets a header only if the upstream did not, so this is a fallback, not a second source.
+	header {
+		?Strict-Transport-Security "max-age=63072000; includeSubDomains"
+		?X-Content-Type-Options "nosniff"
+		?Referrer-Policy "strict-origin-when-cross-origin"
+		?X-Frame-Options "DENY"
+		-Server
+	}
+
+	reverse_proxy app:3000
+}
