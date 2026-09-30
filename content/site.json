@@ -1,0 +1,35 @@
+{
+  "name": "studioJHWA",
+  "legalName": "[PLACEHOLDER]",
+  "tagline": "Formed by flow, built on principles.",
+  "description": {
+    "en": "Interior design and build studio in Surabaya and Malang. We design, produce custom furniture, and install, so your space is ready to live in.",
+    "id": "Jasa desain interior dan build di Surabaya dan Malang. Dari desain, produksi furnitur custom, sampai pemasangan, ruangmu siap ditempati."
+  },
+  "contact": {
+    "whatsapp": "6280000000000",
+    "email": "hello@example.com"
+  },
+  "address": {
+    "street": "[PLACEHOLDER]",
+    "city": "[PLACEHOLDER]",
+    "region": "Jawa Timur",
+    "postalCode": "[PLACEHOLDER]",
+    "country": "ID"
+  },
+  "serviceAreas": ["Surabaya", "Malang"],
+  "socials": [
+    {
+      "platform": "instagram",
+      "handle": "@studio.jhwa",
+      "url": "https://instagram.com/studio.jhwa"
+    }
+  ],
+  "businessHours": [
+    {
+      "days": "[PLACEHOLDER]",
+      "opens": "[PLACEHOLDER]",
+      "closes": "[PLACEHOLDER]"
+    }
+  ]
+}

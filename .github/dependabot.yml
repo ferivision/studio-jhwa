@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    target-branch: develop
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 10
+    commit-message: { prefix: "chore(deps)", prefix-development: "chore(deps-dev)" }
+    labels: [chore]
+    groups:
+      minor-and-patch: { update-types: [minor, patch] }
+    ignore:
+      # Pinned majors, see plan Global Constraints; revisit when peers allow.
+      - { dependency-name: typescript, update-types: ["version-update:semver-major"] }
+      - { dependency-name: eslint, update-types: ["version-update:semver-major"] }
+      # Types must match the Node 24 runtime (engines.node >=24); do not jump ahead of it.
+      - { dependency-name: "@types/node", update-types: ["version-update:semver-major"] }
+  - package-ecosystem: github-actions
+    directory: /
+    target-branch: develop
+    schedule: { interval: weekly, day: monday }
+    commit-message: { prefix: "ci(deps)" }
+    labels: [ci]

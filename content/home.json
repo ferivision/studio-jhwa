@@ -1,0 +1,176 @@
+{
+  "hero": {
+    "src": "/images/home/dining.jpg",
+    "alt": {
+      "en": "Dining room with a dark timber wall, globe chandelier and blush velvet chairs",
+      "id": "Ruang makan dengan dinding kayu gelap, lampu gantung bola, dan kursi beludru merah muda pucat"
+    },
+    "position": "50% 40%"
+  },
+  "intro": {
+    "primary": {
+      "src": "/images/home/workroom2.jpg",
+      "alt": {
+        "en": "Study with a walnut desk, cognac leather sofa and gallery wall",
+        "id": "Ruang kerja dengan meja kayu walnut, sofa kulit cokelat, dan dinding galeri"
+      }
+    },
+    "secondary": {
+      "src": "/images/home/motif.jpg",
+      "alt": {
+        "en": "Concrete breeze-block screen with a quarter-circle pattern",
+        "id": "Dinding roster beton dengan pola seperempat lingkaran"
+      }
+    }
+  },
+  "filmStrip": [
+    {
+      "src": "/images/home/living.jpg",
+      "ratio": 0.889,
+      "alt": {
+        "en": "Living room with a cove-lit ceiling, sectional sofa and sculpted wall art",
+        "id": "Ruang keluarga dengan plafon lampu cove, sofa sectional, dan panel seni dinding"
+      }
+    },
+    {
+      "src": "/images/home/dining.jpg",
+      "ratio": 1.228,
+      "alt": {
+        "en": "Dining room with a dark timber wall, globe chandelier and blush velvet chairs",
+        "id": "Ruang makan dengan dinding kayu gelap, lampu gantung bola, dan kursi beludru merah muda pucat"
+      }
+    },
+    {
+      "src": "/images/home/kitchen_sq.jpg",
+      "ratio": 1.022,
+      "alt": {
+        "en": "Kitchen with oak tall units, fluted charcoal panels and a wave-shaped pendant light",
+        "id": "Dapur dengan lemari tinggi kayu oak, panel fluted warna arang, dan lampu gantung berbentuk gelombang"
+      }
+    },
+    {
+      "src": "/images/home/work.jpg",
+      "ratio": 1.111,
+      "alt": {
+        "en": "Walnut writing desk with a task lamp and framed print",
+        "id": "Meja tulis kayu walnut dengan lampu meja dan bingkai gambar"
+      }
+    },
+    {
+      "src": "/images/home/bunk.jpg",
+      "ratio": 1.322,
+      "alt": {
+        "en": "Kids room with a built-in grey bunk bed, storage stairs and climbing wall",
+        "id": "Kamar anak dengan bunk bed built-in abu-abu, tangga penyimpanan, dan dinding panjat"
+      }
+    },
+    {
+      "src": "/images/home/iso.jpg",
+      "ratio": 1.392,
+      "alt": {
+        "en": "Bright living room with a sectional sofa and globe pendant lights",
+        "id": "Ruang keluarga terang dengan sofa sectional dan lampu gantung bola"
+      }
+    },
+    {
+      "src": "/images/home/workroom2.jpg",
+      "ratio": 1.175,
+      "alt": {
+        "en": "Study with a walnut desk, cognac leather sofa and gallery wall",
+        "id": "Ruang kerja dengan meja kayu walnut, sofa kulit cokelat, dan dinding galeri"
+      }
+    },
+    {
+      "src": "/images/home/kitchen.jpg",
+      "ratio": 1.264,
+      "alt": {
+        "en": "Glass-front pantry cabinet beside an oak and fluted kitchen island",
+        "id": "Lemari pantry berpintu kaca di samping island dapur kayu oak dan panel fluted"
+      }
+    },
+    {
+      "src": "/images/home/motif.jpg",
+      "ratio": 1.003,
+      "alt": {
+        "en": "Concrete breeze-block screen with a quarter-circle pattern",
+        "id": "Dinding roster beton dengan pola seperempat lingkaran"
+      }
+    }
+  ],
+  "lineToLight": {
+    "drawing": {
+      "src": "/images/home/drawing.jpg",
+      "alt": {
+        "en": "Line drawing of the kitchen, traced from the same view as the render",
+        "id": "Gambar garis dapur dari sudut pandang yang sama dengan render"
+      }
+    },
+    "render": {
+      "src": "/images/home/kitchen_sq.jpg",
+      "alt": {
+        "en": "Kitchen with oak tall units, fluted charcoal panels and a wave-shaped pendant light",
+        "id": "Dapur dengan lemari tinggi kayu oak, panel fluted warna arang, dan lampu gantung berbentuk gelombang"
+      }
+    }
+  },
+  "rooms": [
+    {
+      "key": "living",
+      "src": "/images/home/living.jpg",
+      "position": "50% 60%",
+      "alt": {
+        "en": "Living room with a cove-lit ceiling, sectional sofa and sculpted wall art",
+        "id": "Ruang keluarga dengan plafon lampu cove, sofa sectional, dan panel seni dinding"
+      }
+    },
+    {
+      "key": "kitchen",
+      "src": "/images/home/kitchen_sq.jpg",
+      "alt": {
+        "en": "Kitchen with oak tall units, fluted charcoal panels and a wave-shaped pendant light",
+        "id": "Dapur dengan lemari tinggi kayu oak, panel fluted warna arang, dan lampu gantung berbentuk gelombang"
+      }
+    },
+    {
+      "key": "workspace",
+      "src": "/images/home/workroom2.jpg",
+      "position": "60% 50%",
+      "alt": {
+        "en": "Study with a walnut desk, cognac leather sofa and gallery wall",
+        "id": "Ruang kerja dengan meja kayu walnut, sofa kulit cokelat, dan dinding galeri"
+      }
+    },
+    {
+      "key": "kids",
+      "src": "/images/home/bunk.jpg",
+      "position": "40% 50%",
+      "alt": {
+        "en": "Kids room with a built-in grey bunk bed, storage stairs and climbing wall",
+        "id": "Kamar anak dengan bunk bed built-in abu-abu, tangga penyimpanan, dan dinding panjat"
+      }
+    }
+  ],
+  "services": {
+    "design": {
+      "src": "/images/home/drawing.jpg",
+      "alt": {
+        "en": "Line drawing of the kitchen, traced from the same view as the render",
+        "id": "Gambar garis dapur dari sudut pandang yang sama dengan render"
+      }
+    },
+    "visualize": {
+      "src": "/images/home/kitchen_sq.jpg",
+      "alt": {
+        "en": "Kitchen with oak tall units, fluted charcoal panels and a wave-shaped pendant light",
+        "id": "Dapur dengan lemari tinggi kayu oak, panel fluted warna arang, dan lampu gantung berbentuk gelombang"
+      }
+    },
+    "build": {
+      "src": "/images/home/bunk.jpg",
+      "alt": {
+        "en": "Kids room with a built-in grey bunk bed, storage stairs and climbing wall",
+        "id": "Kamar anak dengan bunk bed built-in abu-abu, tangga penyimpanan, dan dinding panjat"
+      }
+    }
+  }
+}
