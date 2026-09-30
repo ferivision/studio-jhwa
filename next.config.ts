@@ -7,6 +7,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
+  // Docker/VPS only: the Dockerfile sets BUILD_STANDALONE=1. Vercel and `next start` use the default output.
+  output: process.env.BUILD_STANDALONE === "1" ? "standalone" : undefined,
   // Safety net: image routes and content loaders read content/ via fs.
   outputFileTracingIncludes: { "/**": ["./content/**/*"] },
   experimental: { globalNotFound: true },
