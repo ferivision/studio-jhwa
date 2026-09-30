@@ -1,0 +1,88 @@
+{
+  "slug": "rh-house",
+  "name": "RH House",
+  "category": "house",
+  "type": { "en": "Residential house", "id": "Rumah tinggal" },
+  "city": "[City]",
+  "year": "[YYYY]",
+  "area": "[000] m²",
+  "duration": { "en": "[X] months", "id": "[X] bulan" },
+  "scope": { "en": "[Design, production, installation]", "id": "[Desain, produksi, pemasangan]" },
+  "summary": {
+    "en": "[One-line summary of the project, e.g. a family home designed around warm light.]",
+    "id": "[Ringkasan proyek dalam satu kalimat, mis. rumah keluarga yang dirancang dengan cahaya hangat.]"
+  },
+  "brief": {
+    "en": "[Who the client is, how they live, and what wasn't working in the space before. Two to four sentences.]",
+    "id": "[Siapa kliennya, bagaimana mereka tinggal, dan apa yang kurang dari ruang sebelumnya. Dua sampai empat kalimat.]"
+  },
+  "approach": {
+    "en": "[The key design decisions: layout changes, lighting, storage, materials. Two to four sentences.]",
+    "id": "[Keputusan desain utama: perubahan layout, pencahayaan, storage, material. Dua sampai empat kalimat.]"
+  },
+  "cover": {
+    "src": "/images/projects/rh-house/living.jpg",
+    "position": "50% 55%",
+    "alt": {
+      "en": "RH House living area with wall panels, TV backdrop and round coffee tables",
+      "id": "Ruang keluarga RH House dengan panel dinding, TV backdrop, dan meja kopi bundar"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/projects/rh-house/dining.jpg",
+      "position": "50% 45%",
+      "alt": {
+        "en": "Dining area with linear pendant and timber table",
+        "id": "Ruang makan dengan lampu gantung linear dan meja kayu"
+      }
+    },
+    {
+      "src": "/images/projects/rh-house/kitchen.jpg",
+      "alt": {
+        "en": "Pantry joinery with strip lighting",
+        "id": "Kabinet pantry dengan lampu strip"
+      }
+    },
+    {
+      "src": "/images/projects/rh-house/workroom2.jpg",
+      "alt": { "en": "Working room with timber desk", "id": "Ruang kerja dengan meja kayu" }
+    },
+    {
+      "src": "/images/projects/rh-house/motif.jpg",
+      "alt": {
+        "en": "Statement motif panel in black and bone",
+        "id": "Panel motif hitam dan putih tulang"
+      }
+    },
+    {
+      "src": "/images/projects/rh-house/bunk.jpg",
+      "alt": {
+        "en": "Kids room with red-framed bunk bed",
+        "id": "Kamar anak dengan bunk bed rangka merah"
+      }
+    },
+    {
+      "src": "/images/projects/rh-house/work.jpg",
+      "alt": {
+        "en": "Desk corner with timber and monitor",
+        "id": "Sudut meja kerja kayu dengan monitor"
+      }
+    }
+  ],
+  "drawing": {
+    "drawing": {
+      "src": "/images/projects/rh-house/drawing.jpg",
+      "alt": { "en": "Isometric line drawing of the kitchen", "id": "Gambar garis isometrik dapur" }
+    },
+    "render": {
+      "src": "/images/projects/rh-house/kitchen_sq.jpg",
+      "alt": {
+        "en": "Finished kitchen render, same angle",
+        "id": "Render dapur jadi, sudut yang sama"
+      }
+    }
+  },
+  "featured": true,
+  "order": 1
+}

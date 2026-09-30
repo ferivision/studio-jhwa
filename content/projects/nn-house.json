@@ -1,0 +1,42 @@
+{
+  "slug": "nn-house",
+  "name": "NN House",
+  "category": "bedroom",
+  "type": {
+    "en": "Bedroom suite",
+    "id": "Suite kamar tidur"
+  },
+  "city": "[City]",
+  "year": "[YYYY]",
+  "area": "[00] m²",
+  "duration": {
+    "en": "[X] weeks",
+    "id": "[X] minggu"
+  },
+  "scope": {
+    "en": "[Design, production, installation]",
+    "id": "[Desain, produksi, pemasangan]"
+  },
+  "summary": {
+    "en": "[One-line summary of the project, e.g. a family home designed around warm light.]",
+    "id": "[Ringkasan proyek dalam satu kalimat, mis. rumah keluarga yang dirancang dengan cahaya hangat.]"
+  },
+  "brief": {
+    "en": "[Who the client is, how they live, and what wasn't working in the space before. Two to four sentences.]",
+    "id": "[Siapa kliennya, bagaimana mereka tinggal, dan apa yang kurang dari ruang sebelumnya. Dua sampai empat kalimat.]"
+  },
+  "approach": {
+    "en": "[The key design decisions: layout changes, lighting, storage, materials. Two to four sentences.]",
+    "id": "[Keputusan desain utama: perubahan layout, pencahayaan, storage, material. Dua sampai empat kalimat.]"
+  },
+  "cover": {
+    "src": "/images/projects/nn-house/kitchen.jpg",
+    "alt": {
+      "en": "NN House pantry with timber cabinets and strip lighting",
+      "id": "Pantry NN House dengan kabinet kayu dan lampu strip"
+    }
+  },
+  "gallery": [],
+  "featured": true,
+  "order": 5
+}

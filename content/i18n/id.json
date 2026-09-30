@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "home": {
+      "title": "Jasa Desain Interior Surabaya & Malang | studioJHWA",
+      "description": "Jasa desain interior dan build di Surabaya dan Malang. Dari desain, produksi furnitur custom, sampai pemasangan, ruangmu siap ditempati."
+    },
+    "projects": {
+      "title": "Portofolio Desain Interior Surabaya & Malang | studioJHWA",
+      "description": "Pilihan rumah dan ruangan yang didesain dan dikerjakan studioJHWA di Surabaya dan Malang."
+    },
+    "project": {
+      "title": "{name} | Proyek Desain Interior studioJHWA",
+      "description": "{name}: {type} di {city}, didesain dan dikerjakan oleh studioJHWA."
+    },
+    "ogAlt": "studioJHWA, studio desain dan build interior di Surabaya dan Malang"
+  },
+  "a11y": {
+    "skipToContent": "Langsung ke konten",
+    "mainNav": "Utama",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "menu": "Menu"
+  },
+  "nav": {
+    "projects": "Proyek",
+    "services": "Layanan",
+    "rooms": "Ruangan",
+    "faq": "FAQ",
+    "cta": "Mulai proyek"
+  },
+  "lang": { "en": "English", "id": "Bahasa Indonesia" },
+  "hero": {
+    "eyebrow": "Studio desain & build interior, Surabaya & Malang",
+    "line1": "Formed by flow,",
+    "line2": "built on principles.",
+    "primary": "Lihat proyek kami",
+    "secondary": "Mulai proyek"
+  },
+  "intro": {
+    "lead": "Kami mendesain ruangmu, mengerjakannya, lalu menyerahkannya",
+    "leadEm": "siap ditempati.",
+    "body": "studioJHWA adalah studio interior yang melayani Surabaya dan Malang. Satu tim memegang setiap proyek dari sketsa pertama, produksi furnitur custom, sampai pemasangan di lokasi, jadi hasil akhirnya sesuai dengan yang kamu setujui.",
+    "tag": "Desain, produksi, pemasangan. Satu tim."
+  },
+  "selected": { "title": "Proyek pilihan", "viewAll": "Lihat semua proyek" },
+  "strip": {
+    "label": "Karya studio",
+    "title": "Ruang yang kami bentuk.",
+    "viewAll": "Lihat semua proyek"
+  },
+  "lineToLight": {
+    "title": "From line to light.",
+    "body": "Setiap ruang berawal dari gambar yang presisi. Geser slider untuk melihat dapur yang sama sebagai gambar isometrik dan sebagai ruang jadi.",
+    "label": "Geser untuk membandingkan",
+    "render": "Render",
+    "drawing": "Gambar"
+  },
+  "rooms": {
+    "label": "Jelajahi per ruangan",
+    "living": "Ruang keluarga",
+    "kitchen": "Dapur",
+    "workspace": "Ruang kerja",
+    "kids": "Kamar anak"
+  },
+  "services": {
+    "title": "Layanan kami",
+    "lead": "Satu studio untuk seluruh pekerjaan, dari obrolan pertama sampai sekrup terakhir.",
+    "design": {
+      "title": "Desain.",
+      "body": "Konsultasi, konsep, dan tata ruang yang disesuaikan dengan gaya hidup dan anggaranmu."
+    },
+    "visualize": {
+      "title": "Visualisasi.",
+      "body": "Render 3D realistis dan gambar teknis detail, supaya kamu bisa melihat hasilnya sebelum dibangun."
+    },
+    "build": {
+      "title": "Build.",
+      "body": "Produksi furnitur custom, pengerjaan, dan pemasangan di lokasi sampai ruang siap dipakai."
+    }
+  },
+  "built": {
+    "title": "Dibangun, bukan cuma dirender.",
+    "lead": "Foto asli dari lokasi. Ruang yang sama sebelum dikerjakan dan setelah serah terima.",
+    "before": "Sebelum",
+    "after": "Sesudah",
+    "beforePlaceholder": "[Placeholder foto: sebelum, kondisi lokasi]",
+    "afterPlaceholder": "[Placeholder foto: setelah serah terima, sudut yang sama]",
+    "quote": "[Testimoni klien, satu atau dua kalimat tentang pengalaman bekerja dengan studio.]",
+    "cite": "[Nama klien], [Nama proyek]"
+  },
+  "faq": {
+    "title": "Perlu kamu tahu",
+    "items": [
+      {
+        "q": "Area layanannya di mana saja?",
+        "a": "Kami berbasis di Surabaya dan Malang dan menerima proyek di sekitar kedua kota tersebut."
+      },
+      {
+        "q": "Hanya desain, atau sampai pengerjaan?",
+        "a": "Keduanya. Kami menangani desain, produksi custom, dan pemasangan, atau desain saja kalau kamu sudah punya kontraktor."
+      },
+      {
+        "q": "Bagaimana cara memulai?",
+        "a": "Kirim pesan lewat WhatsApp berisi ruangan, perkiraan ukuran, dan foto. Kami atur jadwal konsultasi pertama."
+      },
+      {
+        "q": "Berapa lama pengerjaannya?",
+        "a": "Tergantung scope. Satu ruangan biasanya [X] minggu dari desain disetujui sampai serah terima."
+      }
+    ]
+  },
+  "contact": {
+    "line1": "Punya ruang yang ingin diubah?",
+    "line2": "Yuk, kita bentuk bersama.",
+    "cta": "Chat via WhatsApp",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "instagram": "Instagram",
+    "studio": "Studio",
+    "studioValue": "Surabaya & Malang"
+  },
+  "footer": { "tagline": "Formed by flow, built on principles." },
+  "projectsPage": {
+    "title1": "Proyek",
+    "title2": "kami.",
+    "lead": "Rumah dan ruangan yang kami desain dan kerjakan di Surabaya dan Malang.",
+    "filterLabel": "Filter proyek",
+    "filters": { "all": "Semua", "house": "Rumah", "bedroom": "Kamar tidur", "kids": "Kamar anak" },
+    "resultCount": "{count} proyek ditampilkan",
+    "empty": "Belum ada proyek di kategori ini."
+  },
+  "project": {
+    "back": "Semua proyek",
+    "location": "Lokasi",
+    "type": "Tipe",
+    "area": "Luas",
+    "scope": "Scope",
+    "duration": "Durasi",
+    "year": "Tahun",
+    "brief": "Brief",
+    "approach": "Pendekatan kami",
+    "drawing": "Gambar isometrik",
+    "finished": "Ruang jadi",
+    "next": "Proyek berikutnya",
+    "detail": "Detail"
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "body": "Halaman yang kamu cari tidak ada atau sudah dipindahkan.",
+    "home": "Kembali ke beranda"
+  },
+  "breadcrumb": { "home": "Beranda", "projects": "Proyek" }
+}

@@ -1,0 +1,146 @@
+{
+  "hero": {
+    "src": "/images/home/dining.jpg",
+    "alt": {
+      "en": "Dining room with a linear pendant light and dark timber table",
+      "id": "Ruang makan dengan lampu gantung linear dan meja kayu gelap"
+    },
+    "position": "50% 40%"
+  },
+  "intro": {
+    "primary": {
+      "src": "/images/home/workroom2.jpg",
+      "alt": {
+        "en": "Working room with dark door and timber desk",
+        "id": "Ruang kerja dengan pintu gelap dan meja kayu"
+      }
+    },
+    "secondary": {
+      "src": "/images/home/motif.jpg",
+      "alt": {
+        "en": "Organic black and bone motif panel",
+        "id": "Panel motif organik hitam dan putih tulang"
+      }
+    }
+  },
+  "filmStrip": [
+    {
+      "src": "/images/home/living.jpg",
+      "ratio": 0.889,
+      "alt": {
+        "en": "Living area with wall panels and TV backdrop",
+        "id": "Ruang keluarga dengan panel dinding dan TV backdrop"
+      }
+    },
+    {
+      "src": "/images/home/dining.jpg",
+      "ratio": 1.228,
+      "alt": {
+        "en": "Dining area with a linear pendant light",
+        "id": "Ruang makan dengan lampu gantung linear"
+      }
+    },
+    {
+      "src": "/images/home/kitchen_sq.jpg",
+      "ratio": 1.022,
+      "alt": {
+        "en": "Kitchen with timber cabinets and cove lighting",
+        "id": "Dapur dengan kabinet kayu dan lampu cove"
+      }
+    },
+    {
+      "src": "/images/home/work.jpg",
+      "ratio": 1.111,
+      "alt": {
+        "en": "Minimalist desk in dark timber with a monitor",
+        "id": "Meja kerja minimalis kayu gelap dengan monitor"
+      }
+    },
+    {
+      "src": "/images/home/bunk.jpg",
+      "ratio": 1.322,
+      "alt": {
+        "en": "Kids room with red-framed bunk bed",
+        "id": "Kamar anak dengan bunk bed rangka merah"
+      }
+    },
+    {
+      "src": "/images/home/iso.jpg",
+      "ratio": 1.392,
+      "alt": { "en": "Isometric drawing of an interior", "id": "Gambar isometrik interior" }
+    },
+    {
+      "src": "/images/home/workroom2.jpg",
+      "ratio": 1.175,
+      "alt": { "en": "Working room with timber desk", "id": "Ruang kerja dengan meja kayu" }
+    },
+    {
+      "src": "/images/home/kitchen.jpg",
+      "ratio": 1.264,
+      "alt": {
+        "en": "Pantry with timber cabinets and strip lighting",
+        "id": "Pantry dengan kabinet kayu dan lampu strip"
+      }
+    },
+    {
+      "src": "/images/home/motif.jpg",
+      "ratio": 1.003,
+      "alt": { "en": "Black and bone motif panel", "id": "Panel motif hitam dan putih tulang" }
+    }
+  ],
+  "lineToLight": {
+    "drawing": {
+      "src": "/images/home/drawing.jpg",
+      "alt": { "en": "Isometric line drawing of the kitchen", "id": "Gambar garis isometrik dapur" }
+    },
+    "render": {
+      "src": "/images/home/kitchen_sq.jpg",
+      "alt": {
+        "en": "Finished kitchen render with timber cabinets and cove lighting",
+        "id": "Render dapur jadi dengan kabinet kayu dan lampu cove"
+      }
+    }
+  },
+  "rooms": [
+    {
+      "key": "living",
+      "src": "/images/home/living.jpg",
+      "position": "50% 60%",
+      "alt": { "en": "Living room with wall panels", "id": "Ruang keluarga dengan panel dinding" }
+    },
+    {
+      "key": "kitchen",
+      "src": "/images/home/kitchen_sq.jpg",
+      "alt": { "en": "Kitchen with timber cabinets", "id": "Dapur dengan kabinet kayu" }
+    },
+    {
+      "key": "workspace",
+      "src": "/images/home/workroom2.jpg",
+      "position": "60% 50%",
+      "alt": { "en": "Workspace with timber desk", "id": "Ruang kerja dengan meja kayu" }
+    },
+    {
+      "key": "kids",
+      "src": "/images/home/bunk.jpg",
+      "position": "40% 50%",
+      "alt": { "en": "Kids room with bunk bed", "id": "Kamar anak dengan bunk bed" }
+    }
+  ],
+  "services": {
+    "design": {
+      "src": "/images/home/drawing.jpg",
+      "alt": { "en": "Technical drawing of an interior", "id": "Gambar teknis interior" }
+    },
+    "visualize": {
+      "src": "/images/home/kitchen_sq.jpg",
+      "alt": { "en": "3D render of a kitchen", "id": "Render 3D dapur" }
+    },
+    "build": {
+      "src": "/images/home/bunk.jpg",
+      "alt": {
+        "en": "Finished kids room with a custom bunk bed",
+        "id": "Kamar anak jadi dengan bunk bed custom"
+      }
+    }
+  }
+}
