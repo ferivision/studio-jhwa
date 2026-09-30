@@ -25,6 +25,6 @@ Why not `GITHUB_TOKEN`: pushes made with it do not trigger other workflows and c
 
 When protection is applied (docs/BRANCH_PROTECTION.md), keep `enforce_admins: false` or add the token owner to the bypass list, otherwise the release commit on `main` and the fast-forward of `develop` are rejected.
 
-### Dependency audit scope
+### Release tooling is not a project dependency
 
-CI runs `npm audit --omit=dev --audit-level=high`. `semantic-release` (dev-only) bundles its own `npm`, whose bundled `undici`/`ip-address`/`brace-expansion` have advisories that `npm audit fix` cannot resolve (verified 2026-09-30). This tooling runs only in the release job and is not shipped. Re-audit the full tree after each `semantic-release` upgrade and drop `--omit=dev` once a fixed bundled `npm` is released.
+`release.yml` fetches `semantic-release`, `@semantic-release/changelog` and `@semantic-release/git` at release time with `npx --yes -p <pkg>@<exact version>`. They are not in `package.json`, so their bundled `npm` never enters the project's dependency tree or `npm audit --audit-level=high`. Bump the pinned versions in `release.yml` deliberately (verify with `npm view`).
