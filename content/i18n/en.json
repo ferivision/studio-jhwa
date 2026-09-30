@@ -47,7 +47,8 @@
   "strip": {
     "label": "Studio work",
     "title": "Rooms we've shaped.",
-    "viewAll": "View all projects"
+    "viewAll": "View all projects",
+    "pause": "Pause animation"
   },
   "lineToLight": {
     "title": "From line to light.",
@@ -114,6 +115,7 @@
     "line1": "Have a space in mind?",
     "line2": "Let's shape it together.",
     "cta": "Chat on WhatsApp",
+    "ctaInstagram": "Message us on Instagram",
     "whatsapp": "WhatsApp",
     "email": "Email",
     "instagram": "Instagram",
