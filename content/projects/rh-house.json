@@ -2,12 +2,21 @@
   "slug": "rh-house",
   "name": "RH House",
   "category": "house",
-  "type": { "en": "Residential house", "id": "Rumah tinggal" },
+  "type": {
+    "en": "Residential house",
+    "id": "Rumah tinggal"
+  },
   "city": "[City]",
   "year": "[YYYY]",
   "area": "[000] m²",
-  "duration": { "en": "[X] months", "id": "[X] bulan" },
-  "scope": { "en": "[Design, production, installation]", "id": "[Desain, produksi, pemasangan]" },
+  "duration": {
+    "en": "[X] months",
+    "id": "[X] bulan"
+  },
+  "scope": {
+    "en": "[Design, production, installation]",
+    "id": "[Desain, produksi, pemasangan]"
+  },
   "summary": {
     "en": "[One-line summary of the project, e.g. a family home designed around warm light.]",
     "id": "[Ringkasan proyek dalam satu kalimat, mis. rumah keluarga yang dirancang dengan cahaya hangat.]"
@@ -24,8 +33,8 @@
     "src": "/images/projects/rh-house/living.jpg",
     "position": "50% 55%",
     "alt": {
-      "en": "RH House living area with wall panels, TV backdrop and round coffee tables",
-      "id": "Ruang keluarga RH House dengan panel dinding, TV backdrop, dan meja kopi bundar"
+      "en": "RH House: living room with a cove-lit ceiling, sectional sofa and sculpted wall art",
+      "id": "RH House: ruang keluarga dengan plafon lampu cove, sofa sectional, dan panel seni dinding"
     }
   },
   "gallery": [
@@ -33,53 +42,59 @@
       "src": "/images/projects/rh-house/dining.jpg",
       "position": "50% 45%",
       "alt": {
-        "en": "Dining area with linear pendant and timber table",
-        "id": "Ruang makan dengan lampu gantung linear dan meja kayu"
+        "en": "Dining room with a dark timber wall, globe chandelier and blush velvet chairs",
+        "id": "Ruang makan dengan dinding kayu gelap, lampu gantung bola, dan kursi beludru merah muda pucat"
       }
     },
     {
       "src": "/images/projects/rh-house/kitchen.jpg",
       "alt": {
-        "en": "Pantry joinery with strip lighting",
-        "id": "Kabinet pantry dengan lampu strip"
+        "en": "Glass-front pantry cabinet beside an oak and fluted kitchen island",
+        "id": "Lemari pantry berpintu kaca di samping island dapur kayu oak dan panel fluted"
       }
     },
     {
       "src": "/images/projects/rh-house/workroom2.jpg",
-      "alt": { "en": "Working room with timber desk", "id": "Ruang kerja dengan meja kayu" }
+      "alt": {
+        "en": "Study with a walnut desk, cognac leather sofa and gallery wall",
+        "id": "Ruang kerja dengan meja kayu walnut, sofa kulit cokelat, dan dinding galeri"
+      }
     },
     {
       "src": "/images/projects/rh-house/motif.jpg",
       "alt": {
-        "en": "Statement motif panel in black and bone",
-        "id": "Panel motif hitam dan putih tulang"
+        "en": "Concrete breeze-block screen with a quarter-circle pattern",
+        "id": "Dinding roster beton dengan pola seperempat lingkaran"
       }
     },
     {
       "src": "/images/projects/rh-house/bunk.jpg",
       "alt": {
-        "en": "Kids room with red-framed bunk bed",
-        "id": "Kamar anak dengan bunk bed rangka merah"
+        "en": "Kids room with a built-in grey bunk bed, storage stairs and climbing wall",
+        "id": "Kamar anak dengan bunk bed built-in abu-abu, tangga penyimpanan, dan dinding panjat"
       }
     },
     {
       "src": "/images/projects/rh-house/work.jpg",
       "alt": {
-        "en": "Desk corner with timber and monitor",
-        "id": "Sudut meja kerja kayu dengan monitor"
+        "en": "Walnut writing desk with a task lamp and framed print",
+        "id": "Meja tulis kayu walnut dengan lampu meja dan bingkai gambar"
       }
     }
   ],
   "drawing": {
     "drawing": {
       "src": "/images/projects/rh-house/drawing.jpg",
-      "alt": { "en": "Isometric line drawing of the kitchen", "id": "Gambar garis isometrik dapur" }
+      "alt": {
+        "en": "Line drawing of the kitchen, traced from the same view as the render",
+        "id": "Gambar garis dapur dari sudut pandang yang sama dengan render"
+      }
     },
     "render": {
       "src": "/images/projects/rh-house/kitchen_sq.jpg",
       "alt": {
-        "en": "Finished kitchen render, same angle",
-        "id": "Render dapur jadi, sudut yang sama"
+        "en": "Kitchen with oak tall units, fluted charcoal panels and a wave-shaped pendant light",
+        "id": "Dapur dengan lemari tinggi kayu oak, panel fluted warna arang, dan lampu gantung berbentuk gelombang"
       }
     }
   },
