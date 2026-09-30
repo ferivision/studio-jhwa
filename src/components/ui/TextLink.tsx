@@ -16,7 +16,7 @@ export function TextLink({ href, tone = "dark", className, children }: TextLinkP
     <Link
       href={href}
       className={cn(
-        "text-body underline underline-offset-6 transition-colors",
+        "inline-flex min-h-11 items-center text-body underline underline-offset-6 transition-colors",
         tones[tone],
         className,
       )}
