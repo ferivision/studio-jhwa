@@ -2,6 +2,16 @@ import type { Locale } from "@/lib/i18n/locales";
 import { isPlaceholder } from "@/lib/schemas/common";
 import type { Site } from "@/lib/schemas/site";
 
+const DAY_NAMES = {
+  Mo: "Monday",
+  Tu: "Tuesday",
+  We: "Wednesday",
+  Th: "Thursday",
+  Fr: "Friday",
+  Sa: "Saturday",
+  Su: "Sunday",
+} as const;
+
 type Json = string | number | boolean | null | Json[] | { [key: string]: Json };
 
 /** Removes placeholder strings; drops arrays/objects that end up empty (or only "@type"). */
@@ -57,12 +67,18 @@ export function businessJsonLd(
       : undefined,
     areaServed: site.serviceAreas.map((name) => ({ "@type": "City", name })),
     sameAs: site.socials.map((s) => s.url),
-    openingHoursSpecification: site.businessHours.map((h) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: h.days,
-      opens: h.opens,
-      closes: h.closes,
-    })),
+    openingHoursSpecification: site.businessHours.flatMap((h) =>
+      !Array.isArray(h.days) || isPlaceholder(h.opens) || isPlaceholder(h.closes)
+        ? []
+        : [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: h.days.map((d) => DAY_NAMES[d]),
+              opens: h.opens,
+              closes: h.closes,
+            },
+          ],
+    ),
   };
   return withoutPlaceholders(JSON.parse(JSON.stringify(data)) as Record<string, Json>) ?? {};
 }

@@ -47,7 +47,8 @@
   "strip": {
     "label": "Karya studio",
     "title": "Ruang yang kami bentuk.",
-    "viewAll": "Lihat semua proyek"
+    "viewAll": "Lihat semua proyek",
+    "pause": "Jeda animasi"
   },
   "lineToLight": {
     "title": "From line to light.",
@@ -114,6 +115,7 @@
     "line1": "Punya ruang yang ingin diubah?",
     "line2": "Yuk, kita bentuk bersama.",
     "cta": "Chat via WhatsApp",
+    "ctaInstagram": "Kirim pesan via Instagram",
     "whatsapp": "WhatsApp",
     "email": "Email",
     "instagram": "Instagram",

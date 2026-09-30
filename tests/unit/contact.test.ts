@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { emailHref, getSite, whatsappHref } from "@/lib/content";
+import { emailHref, getSite, primaryContact, whatsappHref } from "@/lib/content";
 import type { Site } from "@/lib/schemas/site";
 
 const base = getSite();
@@ -18,5 +18,21 @@ describe("contact links", () => {
     const site = withContact("6281200000000", "hello@example.com");
     expect(whatsappHref(site)).toBe("https://wa.me/6281200000000");
     expect(emailHref(site)).toBe("mailto:hello@example.com");
+  });
+});
+
+describe("primaryContact", () => {
+  it("prefers WhatsApp when it is real", () => {
+    const site = withContact("6281200000000", "[PLACEHOLDER]");
+    expect(primaryContact(site)).toEqual({ kind: "whatsapp", href: "https://wa.me/6281200000000" });
+  });
+  it("falls back to Instagram while WhatsApp is a placeholder", () => {
+    const site = withContact("[PLACEHOLDER]", "[PLACEHOLDER]");
+    const ig = site.socials.find((s) => s.platform === "instagram");
+    expect(primaryContact(site)).toEqual({ kind: "instagram", href: ig?.url });
+  });
+  it("returns null when neither channel exists", () => {
+    const site = { ...withContact("[PLACEHOLDER]", "[PLACEHOLDER]"), socials: [] };
+    expect(primaryContact(site)).toBeNull();
   });
 });

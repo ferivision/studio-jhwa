@@ -43,4 +43,34 @@ describe("json-ld", () => {
       itemListElement: [{ position: 1 }, { position: 2 }],
     });
   });
+
+  it("maps day codes to schema.org day names", () => {
+    const site = {
+      ...getSite(),
+      businessHours: [
+        { days: ["Mo", "Tu", "Su"] as ("Mo" | "Tu" | "Su")[], opens: "09:00", closes: "17:00" },
+      ],
+    };
+    const data = businessJsonLd(site, "en", "https://e.com", "https://e.com/i.jpg");
+    expect(data.openingHoursSpecification).toEqual([
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Sunday"],
+        opens: "09:00",
+        closes: "17:00",
+      },
+    ]);
+  });
+
+  it("drops opening hours unless days, opens and closes are all real", () => {
+    const partial = {
+      ...getSite(),
+      businessHours: [
+        { days: ["Mo"] as "Mo"[], opens: "09:00", closes: "[PLACEHOLDER]" },
+        { days: "[PLACEHOLDER]", opens: "09:00", closes: "17:00" },
+      ],
+    };
+    const data = businessJsonLd(partial, "en", "https://e.com", "https://e.com/i.jpg");
+    expect(data).not.toHaveProperty("openingHoursSpecification");
+  });
 });
